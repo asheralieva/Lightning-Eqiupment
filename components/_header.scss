@@ -1,0 +1,54 @@
+.header {
+  position: absolute;
+  width: 100%;
+  background: #005bc199;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .close,
+    .open {
+      display: none;
+    }
+    nav {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+    }
+    a {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__content {
+      
+      nav {
+        display: none;
+      }
+      .open{
+        display: block;
+      }
+    }
+  }
+  .header.active {
+    .open {
+      display: none;
+    }
+    .close,
+    nav {
+      display: block;
+      background-color: #00326b99;
+      color: #fff;
+    }
+    nav{
+      padding-top: 20px;
+
+      a{
+        margin-right: 10px;
+      }
+    }
+  }
+}

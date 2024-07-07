@@ -1,0 +1,103 @@
+.news {
+  &__content {
+    margin-top: 150px;
+    .news-upper {
+      display: flex;
+      justify-content: space-between;
+      button {
+        border: 1px solid #005bc1;
+        background-color: #005bc1;
+        color: #fff;
+        text-transform: uppercase;
+        width: 190px;
+        height: 51px;
+        font-size: 16px;
+      }
+    }
+
+    .news__items {
+      margin-top: 77px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      #choosen {
+        img {
+          width: 255px;
+        }
+        display: flex;
+        align-items: center;
+        .top-menu {
+          margin-left: 40px;
+          width: 255px;
+          height: 255px;
+          .item__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 27px;
+            margin-bottom: 42px;
+
+            h4 {
+              font-weight: 400;
+              font-size: 18px;
+              color: #343434;
+              line-height: 26.68px;
+              margin: 0;
+            }
+            p {
+              color: #979797;
+              font-weight: 400;
+              font-size: 14px;
+              margin: 0;
+              text-align-last: left;
+            }
+          }
+          p {
+            color: #343434;
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 21;
+
+          }
+          a{
+            color: #343434;
+            text-decoration: underline;
+          }
+        }
+      }
+      .news__item {
+        h4 {
+          font-weight: 400;
+          font-size: 18px;
+          color: #343434;
+          line-height: 26.68px;
+          margin: 0;
+          width: 225px;
+        }
+        p {
+          color: #343434;
+          font-weight: 300;
+          font-size: 14px;
+          width: 225px;
+        }
+        .under-text {
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          img {
+            width: 128px;
+            height: 115px;
+          }
+          p {
+            color: #979797;
+            font-weight: 400;
+            font-size: 14px;
+            margin: 0;
+            width: 72px;
+          }
+        }
+      }
+    }
+  }
+}

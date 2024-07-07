@@ -1,0 +1,25 @@
+.container{
+    margin: 0 auto;
+    max-width: 1110px;
+}
+.title{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    img{
+        width: 100px;
+        height: 13px;
+    }
+    h2{
+        font-weight: 350;
+        font-size: 30px;
+        margin: 0;
+    }
+}
+.btns{
+
+    button{
+        padding: 0;
+        border: none;
+    }
+}

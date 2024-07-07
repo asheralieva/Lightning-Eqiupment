@@ -1,0 +1,50 @@
+.hero {
+  background: url(../assets/img/bg.png) center;
+  background-size: cover;
+  height: 800px;
+  &__content {
+    padding-top: 202px;
+    h1 {
+      margin: 0;
+      width: 635px;
+      font-size: 48px;
+      color: #fff;
+      font-weight: 400;
+    }
+    p {
+      width: 445px;
+      font-size: 16px;
+      color: #fff;
+    }
+    button {
+      color: #fff;
+      font-size: 16px;
+      background-color: transparent;
+      padding: 15px 40px 14px 41px;
+      border: 2px solid #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    &__content {
+      margin-left: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    &__content {
+      margin-left: 5px;
+      h1{
+        font-size: 36px;
+        width: 420px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}
