@@ -9,8 +9,5 @@ for (let i = 0; i < h3.length; i++) {
     }) 
 }
 
-const h3Comp = document.querySelector('.comp')
-h3Comp.addEventListener('click', ()=>{
-    
-})
+
 

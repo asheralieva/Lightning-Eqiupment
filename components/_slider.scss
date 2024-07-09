@@ -1,44 +1,86 @@
-.slider{
-    &__content{
-        margin-top: 150px;
-        .slider__inner{
-            display: flex;
-            justify-content: space-between;
-            
-            
-        }
+.slider {
+  max-width: 1110px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
 
-        .sliders{
-            margin-top: 70px;
-            display: flex;
-            justify-content: space-between;
-            &__item{
-                position: relative;
-
-               img{
-                width: 540px;
-                height: 400px;
-               }
-                .inner-text{
-                    position: absolute;
-                    max-width: 250px;
-                    padding-left: 25px;
-                    padding-top: 20px;
-                    background-color: #fff;
-                    color: #343434;
-                    top: 258px;
-                    left: 225px;
-                    h4{
-                        font-size: 18px;
-                        font-weight: 400;
-                    }
-                    p{
-                        font-size: 14px;
-                        line-height: 19.07px;
-                        font-weight: 200;
-                    }
-                }
-            }
-        }
+  &__content {
+    margin-top: 150px;
+    .slider__inner {
+      display: flex;
+      justify-content: space-between;
     }
+
+    .sliders {
+      margin-top: 70px;
+      display: flex;
+      gap: 15px;
+      &__item {
+        position: relative;
+
+        img {
+          width: 540px;
+          height: 400px;
+        }
+        .inner-text {
+          position: absolute;
+          max-width: 250px;
+          padding-left: 25px;
+          padding-top: 20px;
+          background-color: #fff;
+          color: #343434;
+          top: 258px;
+          left: 225px;
+          h4 {
+            font-size: 18px;
+            font-weight: 400;
+          }
+          p {
+            font-size: 14px;
+            line-height: 19.07px;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    &__content {
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .slider {
+    &__content {
+      .slider__inner {
+        .title {
+          h2 {
+            font-size: 24px;
+          }
+          img {
+            width: 60px;
+          }
+        }
+        .btns {
+          button {
+            img {
+              width: 35px;
+            }
+          }
+        }
+      }
+      .sliders {
+        &__item {
+          img {
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
 }

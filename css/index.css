@@ -141,6 +141,12 @@ button {
     font-size: 14px;
   }
 }
+.slider {
+  max-width: 1110px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
 .slider__content {
   margin-top: 150px;
 }
@@ -151,7 +157,7 @@ button {
 .slider__content .sliders {
   margin-top: 70px;
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
 }
 .slider__content .sliders__item {
   position: relative;
@@ -180,6 +186,26 @@ button {
   font-weight: 200;
 }
 
+@media screen and (max-width: 1024px) {
+  .slider__content {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .slider__content .slider__inner .title h2 {
+    font-size: 24px;
+  }
+  .slider__content .slider__inner .title img {
+    width: 60px;
+  }
+  .slider__content .slider__inner .btns button img {
+    width: 35px;
+  }
+  .slider__content .sliders__item img {
+    width: 420px;
+  }
+}
 .catalog__content {
   margin-top: 150px;
 }
